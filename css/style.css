@@ -552,6 +552,12 @@ button {
   height: 18px;
 }
 
+.btn svg {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
 /* Profile Photo */
 .hero__photo-wrapper {
   position: relative;
@@ -939,6 +945,12 @@ button {
 .project-card__overlay-btn:hover {
   background: rgba(255, 255, 255, 0.25);
   color: white;
+}
+
+.project-card__overlay-btn svg {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
 }
 
 .project-card__body {
@@ -1452,4 +1464,40 @@ button {
 .mobile-overlay.active {
   opacity: 1;
   visibility: visible;
+}
+
+/* ── Scrollbar Styling ────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--bg-tertiary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-primary);
+}
+
+/* ── Selection ────────────────────────────────────────────── */
+::selection {
+  background: rgba(6, 182, 212, 0.3);
+  color: var(--text-primary);
+}
+
+/* ── Contact link SVG ─────────────────────────────────────── */
+.contact-link svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* ── Footer social SVG ────────────────────────────────────── */
+.footer__social-link svg {
+  width: 18px;
+  height: 18px;
 }

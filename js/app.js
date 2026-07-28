@@ -151,6 +151,10 @@
                 <a href="${p.demo}" class="project-card__overlay-btn" target="_blank" rel="noopener">
                   ${ICONS.externalLink} Demo
                 </a>` : ''}
+              ${(!p.github || p.github === '#') && (!p.demo || p.demo === '#') ? `
+                <span class="project-card__overlay-btn">
+                  ${ICONS.externalLink} View Project
+                </span>` : ''}
             </div>
           </div>
           <div class="project-card__body">
@@ -401,11 +405,12 @@
       html.setAttribute('data-theme', saved);
     }
 
+    const knob = icon.parentElement; // the .theme-toggle__knob div
+
     function updateIcon() {
       const isDark = html.getAttribute('data-theme') !== 'light';
-      icon.innerHTML = isDark
-        ? ICONS.sun.replace('<svg', '<svg class="theme-toggle__icon"')
-        : ICONS.moon.replace('<svg', '<svg class="theme-toggle__icon"');
+      const svgStr = isDark ? ICONS.sun : ICONS.moon;
+      knob.innerHTML = svgStr.replace('<svg', '<svg class="theme-toggle__icon"');
     }
 
     updateIcon();

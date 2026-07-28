@@ -37,7 +37,7 @@ const PORTFOLIO_DATA = {
       github: "https://github.com/HirmasQiemsa",
       whatsapp: "https://wa.me/6285876909228"
     },
-    resumeUrl: "#" // Add your resume download link here
+    resumeUrl: "https://drive.google.com/file/d/1jr-8kd6AJwlnR07Vdiezyf5sPcWJ5Vqu/view?usp=sharing" // Add your resume download link here
   },
 
   /* ── Technical Skills ───────────────────────────────────── */
@@ -114,7 +114,7 @@ const PORTFOLIO_DATA = {
         "Web-based rental management system developed using Laravel and MySQL, with focus on optimizing business processes and feature management through Scrum methodology.",
       techStack: ["Laravel", "MySQL", "Bootstrap", "PHP"],
       image: "assets/images/project-esewa.jpg",
-      github: "#",
+      github: "https://github.com/HirmasQiemsa/E-Sewa.git",
       demo: "#"
     }
     /*

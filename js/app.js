@@ -145,7 +145,7 @@
             <div class="project-card__overlay">
               ${p.github && p.github !== '#' ? `
                 <a href="${p.github}" class="project-card__overlay-btn" target="_blank" rel="noopener">
-                  ${ICONS.github} GitHub
+                  ${ICONS.github} View Repository
                 </a>` : ''}
               ${p.demo && p.demo !== '#' ? `
                 <a href="${p.demo}" class="project-card__overlay-btn" target="_blank" rel="noopener">

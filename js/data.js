@@ -31,7 +31,7 @@ const PORTFOLIO_DATA = {
     location: "Tegal, Central Java, Indonesia",
     email: "hirmasn9@gmail.com",
     phone: "+6285876909228",
-    photo: "assets/images/profile.jpg",
+    photo: BASE64_IMAGES.profile,
     socials: {
       linkedin: "https://www.linkedin.com/in/hirmas-nafi/",
       github: "https://github.com/HirmasQiemsa",
@@ -113,7 +113,7 @@ const PORTFOLIO_DATA = {
       description:
         "Web-based rental management system developed using Laravel and MySQL, with focus on optimizing business processes and feature management through Scrum methodology.",
       techStack: ["Laravel", "MySQL", "Bootstrap", "PHP"],
-      image: "assets/images/project-esewa.jpg",
+      image: BASE64_IMAGES.esewa,
       github: "https://github.com/HirmasQiemsa/E-Sewa.git",
       demo: "#"
     }
